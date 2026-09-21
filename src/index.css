@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;955&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  
+  --color-emerald-50: #f5f8ff; /* Luxurious soft slate-blue ice mist */
+  --color-emerald-100: #e0e9fe; /* High end silver-sapphire */
+  --color-emerald-600: #1d4ed8; /* Premium Royal Sapphire Blue */
+  --color-emerald-700: #1e3a8a; /* Deep Majestic Indigo */
+  
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom animation for gentle scroll hints or glowing buttons */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Custom premium pulse shadow for Call button (Mixed Sapphire + Gold aura) */
+@keyframes ctaPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 78, 216, 0.7), 0 0 0 0 rgba(245, 158, 11, 0.3);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(29, 78, 216, 0), 0 0 0 8px rgba(245, 158, 11, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 78, 216, 0), 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+}
+
+.animate-cta-pulse {
+  animation: ctaPulse 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+
