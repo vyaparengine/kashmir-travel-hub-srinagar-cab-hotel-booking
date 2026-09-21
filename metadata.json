@@ -1,0 +1,6 @@
+{
+  "name": "Kashmir Travel Hub – Srinagar Cab & Hotel Booking (Rafiq Bhai)",
+  "description": "Professional, trust-building landing page for Rafiq Bhai's Kashmir Cab & Hotel Booking business. Featuring Sonamarg, Gulmarg, Pahalgam, and Srinagar tours, dynamic taxi fare estimators, and high-conversion Whatsapp/Call triggers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
